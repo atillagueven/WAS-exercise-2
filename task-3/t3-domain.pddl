@@ -7,11 +7,11 @@
         (at ?s - space)
 		(clean ?r - room)
     )
-    
+
 	(:action move
         :parameters (?x - space ?y - space)
         :precondition  (at ?x)
-        :effect (and (at ?y) 
+        :effect (and (at ?y)
 			(not (at ?x))
 		)
     )
